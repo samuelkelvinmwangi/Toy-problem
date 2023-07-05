@@ -6,3 +6,8 @@ def compare_numbers(a, b)
         #{b}"
   end
   
+  def count_characters(string)
+    counts = Hash.new(0)
+    string.each_char { |char| counts[char] += 1 }
+    counts.to_a
+  end
