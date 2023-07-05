@@ -11,3 +11,14 @@ def compare_numbers(a, b)
     string.each_char { |char| counts[char] += 1 }
     counts.to_a
   end
+
+  def add_word_length(string)
+    words = string.split(" ")
+    result = []
+    
+    words.each do |word|
+      result << "#{word} #{word.length}"
+    end
+    
+    result
+  end
